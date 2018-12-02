@@ -131,7 +131,7 @@ public class Jeopardy implements ActionListener {
 		// If the buttonPressed was the firstButton
 		JButton pressed = (JButton) e.getSource();
 		if (pressed == firstButton) {
-			askQuestion("", "", 200);
+			askQuestion("Where did the main battle in The Avengers take place?", "New York", 200);
 			firstButton.setText("");
 		}
 		// Call the askQuestion() method
@@ -141,22 +141,25 @@ public class Jeopardy implements ActionListener {
 
 		// If the buttonPressed was the secondButton
 		if (pressed == secondButton) {
-			askQuestion("", "", 400);
+			askQuestion(
+					"What character from Star Wars said this quote? \"Help me Obi-Wan Kenobi, you're my only hope.\"",
+					"Princess Leia", 400);
 			secondButton.setText("");
 		}
 
 		if (pressed == thirdButton) {
-			askQuestion("", "", 600);
+			askQuestion("What is the name of the first book in the Harry Potter series in Britian?",
+					"Harry Potter and the Philosopher's Stone", 600);
 			thirdButton.setText("");
 		}
 
 		if (pressed == fourthButton) {
-			askQuestion("", "", 800);
+			askQuestion("Who played Loki in The Avengers?", "Tom Hiddleson", 800);
 			fourthButton.setText("");
 		}
 
 		if (pressed == fifthButton) {
-			askQuestion("", "", 1000);
+			askQuestion("What street did Severus Snape grow up on?", "Spinner's End", 1000);
 			fifthButton.setText("");
 		}
 		// Call the askQuestion() method with a harder question
@@ -257,10 +260,7 @@ public class Jeopardy implements ActionListener {
 }
 
 /*
- * 5 Movie questions and answers: Longest Harry Potter movie? Chamber of Secrets
- * (2:54) Most Popular quote from Princess Leia from A New Hope?
- * "Help me Obi Wan Kenobi, you're my only hope." Who are the 3 Chrises that
- * play in the Marvel Movies? Hemsworth, Evans, Pratt What is the latest MCU
- * movie? Ant man and the wasp
+ * 5 Movie questions and answers: Who said this quote and what movie is it from?
+ * "Help me Obi-Wan Kenobi, you're my only hope."
  * 
  */
